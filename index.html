@@ -1,11 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faruk Badsha - QA Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <h>Welcome my  Website </h>
+  <div class="container">
+
+    <header class="header floating-box">
+      <img src="image/faruk.png" alt="Jane Smith" class="profile-pic" />
+      <h1>Faruk Badsha</h1>
+      <h2>QA Engineer & Automation Specialist</h2>
+      <p class="about-text">
+        Passionate about ensuring software quality through automated testing and continuous improvement.
+      </p>
+      <div class="social-links">
+         <a href="#" onclick="openPopup('about')">About</a>
+        <a href="https://www.linkedin.com/in/faruk-badsha-bb7401211?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5zc%2FCPtASnKTFcwMB7hYbQ%3D%3D" target="_blank">LinkedIn</a>
+        <a href="https://github.com/FarukBadsha0186/" target="_blank">GitHub</a>
+        <a href="resume/Faruk_Badsha_CV_sqa.pdf" target="_blank">CV</a>
+      </div>
+    </header>
+
+    <div id="aboutPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Software QA Engineer with hands-on experience in automated testing, TestNG frameworks, and CI/CD integration. I specialize in Selenium, Appium, REST API testing, and Allure reporting. I love transforming manual test cases into powerful automated scripts and ensuring continuous quality across builds.
+    </p>
+  </div>
+</div>
+<script>
+    function openPopup() {
+      document.getElementById('aboutPopup').style.display = 'block';
+    }
+    function closePopup() {
+      document.getElementById('aboutPopup').style.display = 'none';
+    }
+  </script>
+
+    <section class="skills-section">
+        <h3>Skills & Expertise</h3>
+      
+        <div class="skills-container">
+          <div class="skill-card floating-box">
+            <h4>🧪 Automation Testing</h4>
+            <ul>
+              <li>Smoke, Sanity & Regression Test Strategy</li>
+              <li>Hybrid Frameworks using Selenium, Appium & TestNG</li>
+              <li>Allure/Extent report integration for result visualization</li>
+              <li>Cross-browser & cross-device automation</li>
+            </ul>
+          </div>
+      
+          <div class="skill-card floating-box">
+            <h4>🌐 API & Performance</h4>
+            <ul>
+              <li>REST API testing with Postman & REST Assured</li>
+              <li>Load & stress testing using JMeter</li>
+              <li>JSON Schema validation & automation pipeline</li>
+            </ul>
+          </div>
+      
+          <div class="skill-card floating-box">
+            <h4>⚙️ CI/CD & DevOps</h4>
+            <ul>
+              <li>GitHub Actions / Jenkins for continuous testing</li>
+              <li>Automation integration with Git workflow</li>
+              <li>Version control with Git & GitHub</li>
+            </ul>
+          </div>
+      
+          <div class="skill-card floating-box">
+            <h4>💻 Languages & Tools</h4>
+            <ul>
+              <li>Languages: Java, JavaScript, HTML, CSS, C, C++</li>
+              <li>Tools: Selenium, Appium, TestNG, Postman, Firebase</li>
+              <li>MOdel: POM , CSV , Page Factory</li>
+              <li>Database: MySQL, XAMPP</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+    <section class="projects floating-box">
+        <h3>Projects</h3>
+        <div class="project">
+           <!-- 📱 Project 1: Calculator App Automation -->
+<div class="project">
+    <h4>
+      Calculator App Automation
+      <a href="https://github.com/FarukBadsha0186/Calculator_App_automation" target="_blank" class="github-link">&#128187;</a>
+    </h4>
+    <span>Java | Appium | TestNG</span>
+  
+    <div class="project-details">
+      <div class="detail-block">
+        <strong>🎯 Objective:</strong>
+        <p>Automate the Android Calculator App to validate core functions like addition, subtraction, multiplication, and division.</p>
+      </div>
+      <div class="detail-block">
+        <strong>👨‍💻 Role:</strong>
+        <p>Developed and maintained test scripts using Appium and TestNG on a real Android device.</p>
+      </div>
+      <div class="detail-block">
+        <strong>✅ Outcome:</strong>
+        <p>Achieved 95% test coverage with reusable methods and improved test execution consistency.</p>
+      </div>
+      <div class="detail-block">
+        <strong>🛠️ Tools/Technologies:</strong>
+        <p>Java, Appium, TestNG, Android Emulator, GitHub, POM</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 🏦 Project 2: ParaBank Automation -->
+  <div class="project">
+    <h4>
+      ParaBank Web Automation
+      <a href="https://github.com/FarukBadsha0186/Parabank-BankingAutomation-TestNG" target="_blank" class="github-link">&#128187;</a>
+    </h4>
+    <span>Java | Selenium | TestNG</span>
+  
+    <div class="project-details">
+      <div class="detail-block">
+        <strong>🎯 Objective:</strong>
+        <p>Automate the full customer journey of the ParaBank web application including login, fund transfer, and account overview.</p>
+      </div>
+      <div class="detail-block">
+        <strong>👨‍💻 Role:</strong>
+        <p>Built a modular test automation framework using Selenium WebDriver and TestNG, following the POM structure.</p>
+      </div>
+      <div class="detail-block">
+        <strong>✅ Outcome:</strong>
+        <p>Enhanced regression suite efficiency and reduced manual testing effort by 70% through reusable test flows.</p>
+      </div>
+      <div class="detail-block">
+        <strong>🛠️ Tools/Technologies:</strong>
+        <p>Java, Selenium, TestNG, Maven, Allure Report, GitHub</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 💳 Project 3: MyBank App Automation -->
+  <div class="project">
+    <h4>
+      MyBank Android App Automation
+      <a href="https://github.com/FarukBadsha0186/MyBank-App-Automation-using-Appium-and-TestNG" target="_blank" class="github-link">&#128187;</a>
+    </h4>
+    <span>Java | Appium | TestNG</span>
+  
+    <div class="project-details">
+      <div class="detail-block">
+        <strong>🎯 Objective:</strong>
+        <p>Automate key features of the “MyBank” Android app like login, account balance check, and transaction history.</p>
+      </div>
+      <div class="detail-block">
+        <strong>👨‍💻 Role:</strong>
+        <p>Created mobile test scripts using Appium and TestNG, validating real-time functionality on an Android device.</p>
+      </div>
+      <div class="detail-block">
+        <strong>✅ Outcome:</strong>
+        <p>Delivered a stable mobile automation suite integrated with Gradle and Allure for reporting.</p>
+      </div>
+      <div class="detail-block">
+        <strong>🛠️ Tools/Technologies:</strong>
+        <p>Java, Appium, TestNG, Gradle, Android Device, Allure Report, GitHub</p>
+      </div>
+    </div>
+  </div>
+  <div class="see-more">
+    <a href="project.html" class="see-more-btn">See More Projects →</a>
+  </div>
+  
+  
+      
+      </section>
+      
+      
+<section class="education-certifications floating-box">
+  <!-- <h3>🎓 Education & Training</h3> -->
+
+  <div class="edu-item">
+    <h4>🎓 Education</h4>
+    <p><strong>B.Sc. in CSE</strong></p>
+    <p>BGC Trust University</p>
+    <p>Passing Year: 2022 | CGPA: 3.13</p>
+  </div>
+
+  <div class="edu-item">
+    <h4>📚 Training & Certifications</h4>
+    <ul>
+      <li><strong>Full Stack SDET SQA Online Course </strong> – Road To Career</li>
+      <li><strong>Daylong Workshop</strong> on Software Quality Assurance – Road To Career (Online)</li>
+    </ul>
+  </div>
+</section>
+
+
+  <section class="contact floating-box">
+  <h3>📞 Contact Me</h3>
+  <div class="contact-info">
+    <p><strong>📧 Email:</strong> farukbadsha02@gmail.com</p>
+    <p><strong>📱 Phone:</strong> 01866844416</p>
+    <p><strong>📍 Address:</strong> SobujBon Nur Tower, Rampura, Dhaka</p>
+  </div>
+</section>
+
+
+      <footer class="thank-you">
+  <p> Thank you for visiting my portfolio. I'm passionate about quality assurance and always open to new learning and collaboration opportunities. Let's connect!</p>
+</footer>
+
+
+  </div>
 </body>
 </html>
